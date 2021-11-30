@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Prompt:wght@300&display=swap");
+/* Lo de arriba es la importación de fuentes de google*/
+body {
+  background-image: url("fondojugue.jpg");
+  font-family: "Permanent Marker", "Sans-serif";
+  font-size: 25px;
+  margin-left: 15%;
+  margin-right: 15%;
+  }
+}
+
+table.menuhorizontal { /*Tabla para el menu*/
+  border: 5px solid tomato;
+  border-style: dashed;/*Línea discontinua*/
+  background-color: rgb(143, 233, 236);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+div.menuhorizontal {
+  background-color: rgb(227, 149, 247);
+  overflow: auto; /*Define qué se debe mostrar cuando el contenido se desborda*/
+  font-family: Permanent Marker;
+  border: tomato 5px solid; /*Borde interno color tomato*/
+  border-top-left-radius: 20px; /*Borde curvo*/
+  border-bottom-right-radius: 20px;/*Poner un objeto transaprente al situar el ratón encima*/
+  outline: 2px dashed;/*Borde externo discontinuo*/
+  outline-color: blue;/*Borde externo azul*/
+  outline-width: 5px;
+  min-height: .01%;
+  padding: 2%;
+  margin: 2%;s
+  text-align: center; /*Alinear al centro*/
+}
+
+div.menuhorizontal a {
+  display: block; /*Elemento sea un solo bloque*/
+  color: rgb(233, 235, 144);
+  font-size: 100%;
+  padding: 25%
+  text-decoration: none;
+}
+
+div.menuhorizontal a:hover {
+  background-color: rgb(143, 233, 236); /* Cambio de color al situar el cursor por encima*/
+}
+.centrado { /* Esto sirve para centrar un objeto*/
+  margin: 10% auto;
+  display: block; /*Elemento sea un solo bloque*/
+}
+.derecha { /* Esto sirve para situar a la derecha un objeto*/
+  float: right; /*Elemento se pegue a la derecha*/
+  margin-right: 5%;
+}
+img#logo { /* Tamaño y altura de la imagen del logo*/
+  width: 100%;
+  height: 100%;
+}
+img { /* Tamaño, altura y borde redondeado de las imagenes*/
+  border-radius: 10%;
+  width: 100%;
+  height: 100%;
+}
+#reflex { /* Reflejar una imagen a la derecha, y que vaya desapareciendo */
+  -webkit-box-reflect: right 0% /* Reflejar una imagen a la derecha */
+    linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); /* Vaya desapareciendo poco a poco  */
+    width: 50%;
+    height: 50%;
+
+}
+#transparente { /* Poner un objeto transparente*/
+  opacity: 1; 
+}
+#transparente:hover { /* Poner un objeto transaprente al situar el ratón encima*/
+  opacity: 0.5;
+}
+
+.columna { 
+  column-count: 3; /* Nº de columnas 3*/
+  column-rule-style: solid; /* Separador de las columnas línea sólida*/
+  column-rule-width: 0.5%; /* Grosor de la línea */
+  column-rule-color: tomato; /* Color de la línea*/
+  padding-right: 10%; 
+  column-width: 100%;
+  margin: 10% auto;
+  display: block;
+}
+@media screen and (max-width: 992px) { /* Formato responsive para pantallas grandes*/
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) { /* Formato responsive para pantallas medianas*/
+  .column {
+    width: 100%;
+  }
+}
+h1 {
+  font-family: "Rock Salt", "Sans-serif";
+  font-size: 30px;
+  text-align:center;
+  color: rgb(143, 233, 236);
+  -webkit-text-stroke: 0.05px black; /* Línea externa de la letra color negro*/
+  background: -webkit-linear-gradient(tomato,rgb(233, 235, 144),rgb(143, 233, 236), rgb(227, 149, 247)); /* Va cambiando el color de forma progresiva*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+}
+h2,
+h3,
+h4 {
+  font-family: "Irish Grover";
+  text-align: left;
+}
+h2 {
+  font-size: 26px;
+  text-align: center;
+  color: tomato;
+  -webkit-text-stroke: 0.05px black; /* Línea externa de la letra color negro*/
+}
+h3 {
+  font-size: 25px;
+  text-align: left;
+}
+h4 {
+  font-size: 18px;
+}
+p {
+  font-family: "Pacifico";
+  font-size: 60%;
+  margin-top: 5%;
+}
+em.superior {
+  text-decoration: overline rgb(227, 149, 247);
+}
+li#sombra {
+  text-shadow: 2px 2px 0 #aaa, 6px 6px 2px #777, 12px 12px 8px #444;
+}
+em.subrayado {
+  text-decoration: underline tomato;
+  text-transform: capitalize; /* */
+}
+em.tachado {
+  text-decoration: line-through rgb(143, 233, 236);
+}
+p.espaciado {
+  line-height: 300%;
+}
+p.espaciadoletra {
+  letter-spacing: 0.3em;
+}
+p.primeralinea {
+  text-indent: 40px;
+}
+table { 
+  border: 1px solid; /* Para poner borde a la tabla*/
+  border-radius: 5px; /* borde redondeado*/
+  background-color: white; /* color fondo de la tabla*/
+  border-width: 3px;
+  border-color: black; /* color borde tabla*/
+  width: 100%;
+  border-collapse: collapse; /* para fusionar los bordes*/
+  font-size: 15px; /* tamaño de la fuente*/
+}
+td { 
+  border: 1px solid; 
+  text-align: center; /* cómo queda alineado el texto de la tabla*/
+}
+tr:nth-child(even) { /* para hacer que las filas pares estén de otro color con respecto a las impares*/
+  background-color: grey; 
+}
+
+iframe { 
+  border-bottom: 5% solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: blue;
+  width: 100%;
+  margin: 10% auto;
+  display: block;
+}/* hacer que únicamente tenga borde la parte de abajo*/
+
+.formulariocontacto {  
+  background-color: grey;
+  padding: 10%; /*hace que el rectangulo gris del formulario tenga margenes*/
+}
+
+.gruporadiobutton label, 
+.gruporadiobutton input {
+  width: 10%;
+  float: left;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 1%;
+  border: 1px solid #ccc;
+  border-radius: 4%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] { /*botón enviar*/
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049; /*se cambia al color verde oscuro al situar el cursor por encima*/
+}
+
+input [type="reset"] { /*botón reset*/
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; /*el tipo de cursor sea un puntero*/
+  float: right;
+}
+input [type="reset"]:hover {
+  background-color: grey
+}
+
+.tooltip .tooltiptext { /* da información extra al pasar el cursor por el elemento*/
+  visibility: hidden; /*esté en oculto*/
+  width: 50%;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px; /* Esquinas*/
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;  /*indica el orden de un elemento posicionado y sus descendientes*/
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+imput [type="sexo"] {
+  white-space: pre; /* determina cómo se maneja el espacio en blanco dentro de un elemento*/
+}
+
