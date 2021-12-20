@@ -1,50 +1,106 @@
+
+/*-----------------------Importación de fuentes de google---------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Prompt:wght@300&display=swap");
-/* Lo de arriba es la importación de fuentes de google*/
+/*------------------------------------BODY---------------------------------------------------------------------------*/
 body {
   background-image: url("fondojugue.jpg");
   font-family: "Permanent Marker", "Sans-serif";
   font-size: 25px;
-  margin-left: 15%;
-  margin-right: 15%;
+  }
+/*--------------------------Menú lateral Común para todas las páginas--------------------------------------------------------------------*/
+.desliza {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: rgb(143, 233, 236);; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 1.5%; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* enlaces del menu */
+.desliza a {
+  padding: 15%;
+  text-decoration: none;
+  font-size: 85%;
+  color: tomato;
+  text-shadow: -5% -5% 3% #000;
+  font-family: verdana;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Ratón por encima de los enlaces del menu */
+.desliza a:hover,
+.offcanvas a:focus {
+  color: rgb(241, 220, 122);
+  /* Position and style the close button (top right corner) */
+}
+a.abrir{
+  float:left;
+}
+
+/*---------------------------------Texto---------------------------------------------------------*/
+h1 {
+  font-family: "Rock Salt", "Sans-serif";
+  font-size: 30px;
+  text-align:center;
+  color: rgb(143, 233, 236);
+  -webkit-text-stroke: 0.05px black; /* Línea externa de la letra color negro*/
+  background: -webkit-linear-gradient(tomato,rgb(233, 235, 144),rgb(143, 233, 236), rgb(227, 149, 247)); /* Va cambiando el color de forma progresiva*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   }
 }
-
-table.menuhorizontal { /*Tabla para el menu*/
-  border: 5px solid tomato;
-  border-style: dashed;/*Línea discontinua*/
-  background-color: rgb(143, 233, 236);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+h2,
+h3,
+h4 {
+  font-family: "Irish Grover";
+  text-align: left;
+  -webkit-text-stroke: 0.05px black; /* Línea externa de la letra color negro*/
 }
-div.menuhorizontal {
-  background-color: rgb(227, 149, 247);
-  overflow: auto; /*Define qué se debe mostrar cuando el contenido se desborda*/
-  font-family: Permanent Marker;
-  border: tomato 5px solid; /*Borde interno color tomato*/
-  border-top-left-radius: 20px; /*Borde curvo*/
-  border-bottom-right-radius: 20px;/*Poner un objeto transaprente al situar el ratón encima*/
-  outline: 2px dashed;/*Borde externo discontinuo*/
-  outline-color: blue;/*Borde externo azul*/
-  outline-width: 5px;
-  min-height: .01%;
-  padding: 2%;
-  margin: 2%;s
-  text-align: center; /*Alinear al centro*/
-}
-
-div.menuhorizontal a {
-  display: block; /*Elemento sea un solo bloque*/
-  color: rgb(233, 235, 144);
+h2 {
   font-size: 100%;
-  padding: 25%
-  text-decoration: none;
+  text-align: center;
+  color: tomato;  
+  -webkit-text-stroke: 0.05px black; /* Línea externa de la letra color negro*/
 }
+h3 {
+  font-size: 89%;
+  color: black;
+  text-align: center;
+  -webkit-text-stroke: 0.05px black; /* Línea externa de la letra color negro*/
 
-div.menuhorizontal a:hover {
-  background-color: rgb(143, 233, 236); /* Cambio de color al situar el cursor por encima*/
 }
+h4 {
+  font-size: 89%;
+  -webkit-text-stroke: 0.05px black; /* Línea externa de la letra color negro*/
+}
+p {
+  font-family: "Pacifico";
+  font-size: 150%;
+  margin-top: 5%;
+  color:red;
+}
+a {
+  display: block;
+  color: rgb(227, 149, 247);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 89%;
+  -webkit-text-stroke: 0.05px black; /* Línea externa de la letra color negro*/
+}
+span{
+  color:red;
+}
+/*-----------------------------Posición----------------------------------------------------*/
 .centrado { /* Esto sirve para centrar un objeto*/
   margin: 10% auto;
   display: block; /*Elemento sea un solo bloque*/
@@ -53,6 +109,7 @@ div.menuhorizontal a:hover {
   float: right; /*Elemento se pegue a la derecha*/
   margin-right: 5%;
 }
+/*-----------------------------Imágenes--------------------------------------------------------------- */
 img#logo { /* Tamaño y altura de la imagen del logo*/
   width: 100%;
   height: 100%;
@@ -75,7 +132,7 @@ img { /* Tamaño, altura y borde redondeado de las imagenes*/
 #transparente:hover { /* Poner un objeto transaprente al situar el ratón encima*/
   opacity: 0.5;
 }
-
+/*-----------------------------------Columnas------------------------------------------------------------------------------*/
 .columna { 
   column-count: 3; /* Nº de columnas 3*/
   column-rule-style: solid; /* Separador de las columnas línea sólida*/
@@ -86,53 +143,8 @@ img { /* Tamaño, altura y borde redondeado de las imagenes*/
   margin: 10% auto;
   display: block;
 }
-@media screen and (max-width: 992px) { /* Formato responsive para pantallas grandes*/
-  .column {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 600px) { /* Formato responsive para pantallas medianas*/
-  .column {
-    width: 100%;
-  }
-}
-h1 {
-  font-family: "Rock Salt", "Sans-serif";
-  font-size: 30px;
-  text-align:center;
-  color: rgb(143, 233, 236);
-  -webkit-text-stroke: 0.05px black; /* Línea externa de la letra color negro*/
-  background: -webkit-linear-gradient(tomato,rgb(233, 235, 144),rgb(143, 233, 236), rgb(227, 149, 247)); /* Va cambiando el color de forma progresiva*/
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  }
-}
-h2,
-h3,
-h4 {
-  font-family: "Irish Grover";
-  text-align: left;
-}
-h2 {
-  font-size: 26px;
-  text-align: center;
-  color: tomato;
-  -webkit-text-stroke: 0.05px black; /* Línea externa de la letra color negro*/
-}
-h3 {
-  font-size: 25px;
-  text-align: left;
-}
-h4 {
-  font-size: 18px;
-}
-p {
-  font-family: "Pacifico";
-  font-size: 60%;
-  margin-top: 5%;
-}
-em.superior {
+/*-----------------------------Detalles Texto---------------------------------------------------------------------------*/
+m.superior {
   text-decoration: overline rgb(227, 149, 247);
 }
 li#sombra {
@@ -154,6 +166,7 @@ p.espaciadoletra {
 p.primeralinea {
   text-indent: 40px;
 }
+/*-------------------------------Tablas---------------------------------------------------------------*/
 table { 
   border: 1px solid; /* Para poner borde a la tabla*/
   border-radius: 5px; /* borde redondeado*/
@@ -168,6 +181,7 @@ td {
   border: 1px solid; 
   text-align: center; /* cómo queda alineado el texto de la tabla*/
 }
+/*------------------------Formulario---------------------------------------------------------------------------------*/
 tr:nth-child(even) { /* para hacer que las filas pares estén de otro color con respecto a las impares*/
   background-color: grey; 
 }
@@ -257,4 +271,3 @@ input [type="reset"]:hover {
 imput [type="sexo"] {
   white-space: pre; /* determina cómo se maneja el espacio en blanco dentro de un elemento*/
 }
-
