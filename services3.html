@@ -1,94 +1,128 @@
 <!DOCTYPE html>
-<!--DOCTYPE html para indicar que la página está escrita en la versión HTML5-->
-<html lang= "es-ES">
-  <!-- "lang" es para el idioma, español y "-ES" es de ESPAÑA -->
+<html lang="es -ES">
+  <!-- lang para el idioma y -ES par ael pais -->
   <head>
-    <meta charset="UTF-8"/> 
-    <meta name="author" content="Cesur Toys"/>
+    <meta charset="UTF-8" />
     <!--Uso del código UTF8-->
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <!-- viewport para que se vea bien en todas las plataformas-->
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
-   <!-- http-equiv="X-UA-Compatible" sirve para la compatibilidad con los navegadores--> 
+    <meta name="author" content="Cesur Toys" />
+    <!--Nombre de nuestro trabajo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
     <title>Cesur Toys</title>
-    <link rel="stylesheet" href="final.css">
     <!-- Enlace para vincular css-->
-    <script src="https://kit.fontawesome.com/0e2dbe84d0.js" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="generic.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function abrirnav() {
+        document.getElementById("navegacion").style.width = "250px";
+        document.getElementById("menu").style.marginLeft = "250px";
+      }
+
+      function cerrarnav() {
+        document.getElementById("navegacion").style.width = "0";
+        document.getElementById("menu").style.marginLeft = "0";
+      }
+    </script>
   </head>
-  <body>
-      <img class="centrado" id="logo" src="logo.PNG"/>
-      <div class="menuhorizontal">
-        <a href="index2.html">Página Principal</a>
-        <a href="aboutUs2.html">Quiénes Somos?</a>
-        <a href="libre2.html">Página Libre</a>
-        <a href="contacto2.html">Contacte Con Nosotros</a>
+  <body background="fondojugue.jpg">
+    <div id="navegacion" class="desliza">
+      <a href="javascript:void(0)" onclick="cerrarnav()">&times;</a>
+      <a href="index3.html">Página Principal</a>
+      <a href="aboutUs3.html">Quiénes somos?</a>
+      <a href="services3.html">Qué vendemos?</a>
+      <a href="free3.html">Página Libre</a>
+    </div>
+    <nav class="navegarriba">
+      <a href="#" class="abrir" onclick="abrirnav()">
+        <svg width="30" height="30" id="icoOpen">
+          <path d="M0,5 30,5" stroke="tomato" stroke-width="5" />
+          <path d="M0,14 30,14" stroke="rgb(241, 220, 122)" stroke-width="5" />
+          <path d="M0,23 30,23" stroke="tomato" stroke-width="5" />
+        </svg>
+      </a>
+    </nav>
+    <img class="centrado" id="logo" src="logo.PNG" />
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+        ></button>
       </div>
-    <h1>Venta de <u>juguetes</u></h1>
-    <!-- h1 para comenzar encabezado y títulos -->
-    <p>Lista <u>juguetes</u> <b>más vendidos:</b></p>
-    <!-- he usado p para el párrafo y b para la negrita -->
-    <ul>
-      <!-- ul y li para representar las listas -->
-      <h1><li id="sombra">Juegos de mesa</li></h1>
-      <!-- p para iniciar el párrafo -->
-        <h2><strong>Juego</strong> <em>Virus</em></h2>
-        <!-- strong para poner en negrita y em para cursiva, y enfatizar el texto -->
-      <p class="espaciado">
-        <img class="centrado" src="https://www.juguetescarrion.com/798724-large_default/juego-virus.jpg"/>
-          En el hospital Nuestra Señora de Tranjis, saltan las alarmas cuando
-          los novatos del laboratorio se dan cuenta demasiado tarde de que los
-          contenedores de muestras no estaban vacíos como pensaban. En su
-          interior contienen brotes de virus experimentales que ahora campan a
-          sus anchas por todo el centro y sólo tú puedes detenerlos. Tu misión
-          consiste  en enfrentarte con arrojo a la pandemia y competir por ser el
-          primero en erradicar los virus logrando aislar un cuerpo sano para
-          evitar la propagación de las terribles enfermedades. Éticos o no,
-          todos los medios a tu alcance valen para ganar. El vencedor será
-          colmado de reconocimientos y los perdedores arrojados a las
-          enfurecidas autoridades sanitarias. Usa tu astucia para alzarte con la
-          victoria boicoteando los esfuerzos de tus rivales. Como Bertrand
-          Russell dijo una vez: "Lo único que redimirá a la humanidad, es la
-          cooperación". Obviamente, el hombre no conocía este juego. Duracion de
-          la partida: 20 minutos Numero de jugadores: de 2 a 6 jugadores Edad
-          recomendada: a partir de 8 años Contenido del juego: 68 cartas + 2
-          personalizables e instrucciones.
-      </p>
-        <h3><mark>14,99&euro;</mark><i class="fab fa-amazon-pay"></i><i class="fab fa-bitcoin"></i><i class="fab fa-cc-paypal"></i> </h3> 
-        <!-- mark para subrayar y &euro; para representar el símbolo de euro -->
-        <h2><strong>Juego</strong> <em class="superior">Damas Magneticoica</em></h2>
-      <p class="espaciadoletra">
-        <img class="centrado" src="https://www.juguetescarrion.com/627257-large_default/juego-damas-magneticoica.jpg"/>
-          Juego de Las Damas magnético ideal para viajes, gracias a su caja de
-          plástico con tapa transparente se puede transportar con comodidad. La
-          medida del tablero es de 16 x 16cm y las fichas son adecuadas para el
-          tamaño de las casillas del mismo.
-      </p>
-          <h3><mark>5,25&euro;</mark><i class="fab fa-amazon-pay"></i><i class="fab fa-bitcoin"></i><i class="fab fa-cc-paypal"></i></h3>
-      <h1><li id="sombra">Muñecas</li></h1>
-          <h2><strong>Muñeca</strong> <em class="subrayado">My Little Pony Aventuras de Cristal</em></li></h2>
-          <img class="centrado" src="https://www.juguetescarrion.com/801750-large_default/my-little-pony-aventuras-de-cristal.jpg"/>
-          <p class="primeralinea">
-          Descubre los nuevos ponys con este cristal mágico con figurita
-          sorpresa de 7 cm con accesorios y pulsera de la amistad.
-      </p>
-          <h3><mark>10,99&euro;</mark><i class="fab fa-amazon-pay"></i><i class="fab fa-bitcoin"></i><i class="fab fa-cc-paypal"></i></h3>
-          <h2><strong>Muñeca</strong> <em class="tachado">Barbie Fashionista Mono Tie-Dye</em></h2>
-      <p>
-      <img class="centrado" src="https://www.juguetescarrion.com/802787-large_default/barbie-fashionista-mono-tie-dye.jpg"/>
-          Barbie® y Ken™ Fashionistas™ conmemoran la diversidad con muñecas de
-          moda únicas que inspiran historias del mundo real y sueños sin
-          límites. Las muñecas están disponibles en una amplia variedad de tonos
-          de piel, color de ojos, color y textura de pelo, tipos de cuerpo y
-          estilos. Están diseñadas para reflejar el mundo en el que viven las
-          niñas, y sus llamativos conjuntos les ayudan a destacar con
-          personalidades muy atractivas. El embalaje de vinilo sirve para
-          guardar, llevar y personalizar los accesorios y conjuntos de Barbie®,
-          llevar la muñeca a cualquier parte e incluso puedes decorarlo para
-          expresar tu propio estilo. Las niñas pueden coleccionar las muñecas y
-          accesorios de Barbie® para descubrir infinidad de formas de crear
-          historias y expresar su propio estilo.
-      </p>
-          <h3><mark>15,99&euro;</mark><i class="fab fa-amazon-pay"></i><i class="fab fa-bitcoin"></i><i class="fab fa-cc-paypal"></i></h3>
-    <h4>Más <u>juguetes próximamente...</u></h4>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://montessoriparatodos.es/8942-medium_default/virus-juego-de-cartas.jpg"
+            alt="virus"
+            class="d-block"
+            style="width: 100%;"
+          />
+          <div class="carousel-caption">
+            <h3>Juego Virus<span>14,99&euro;</span></h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.juguetescarrion.com/815706-large_default/juego-damas-magneticoica.jpg"
+            alt="damas"
+            class="d-block"
+            style="width: 100%;"
+          />
+          <div class="carousel-caption">
+            <h3>Juegos Damas Magneticoica<span>5,25&euro;</span></h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://tienda.videooca.com/143468-superlarge_default/mlp-aventura-de-cristal.jpg"
+            alt="pony"
+            class="d-block"
+            style="width: 100%;"
+          />
+          <div class="carousel-caption">
+            <h3>My Little Pony Aventuras de Cristal<span>10,99&euro;</span></h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
   </body>
 </html>
