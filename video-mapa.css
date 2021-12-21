@@ -1,0 +1,10 @@
+iframe { 
+  border-bottom: 5% solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: blue;
+  width: 100%;
+  margin: 10% auto;
+  display: block;
+}
