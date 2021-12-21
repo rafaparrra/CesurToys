@@ -1,0 +1,73 @@
+.formulariocontacto {  
+  background-color: grey;
+  padding: 10%; 
+}
+
+.gruporadiobutton label, 
+.gruporadiobutton input {
+  width: 10%;
+  float: left;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 1%;
+  border: 1px solid #ccc;
+  border-radius: 4%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] { 
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049; 
+}
+
+input [type="reset"] { 
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+input [type="reset"]:hover {
+  background-color: grey
+}
+
+.tooltip .tooltiptext { 
+  visibility: hidden; 
+  width: 50%;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px; 
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;  
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+imput [type="sexo"] {
+  white-space: pre; 
+}
+
