@@ -1,0 +1,53 @@
+body {
+  background-image: url("fondojugue.jpg");
+  font-family: "Permanent Marker", "Sans-serif";
+  font-size: 25px;
+}
+h1 {
+  font-family: "Rock Salt", "Sans-serif";
+  font-size: 30px;
+  text-align: center;
+  color: rgb(143, 233, 236);
+  -webkit-text-stroke: 0,05px black;
+  background: -webkit-linear-gradient(tomato, rgb(233, 235, 144), rgb(143, 233. 236), rgb(227, 149,247));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+h2,
+h3,
+h4 {
+  font-family: "Irish Grover";
+  text-align: left;
+  -webkit-text-stroke: 0,05px black;
+}
+h2 {
+  font-size: 100%;
+  text-align: center;
+  color: tomato;
+  -webkit-text-stroke: 0,05px black;
+}
+h3 {
+  font-size: 89%;
+  color: black;
+  text-align: center;
+  -webkit-text-stroke: 0,5px black;
+}
+h4 {
+  font-size: 89%;
+  -webkit-text-stroke: 0,05px black;
+}
+p {
+  font-family: "Pacifico";
+  font-size: 150%;
+  margin-top: 5%;
+  color: red;
+}
+a {
+  display: block;
+  color: rgb(227,149,247);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 89%;
+  -webkit-text-stroke: 0,05px black;
+}
