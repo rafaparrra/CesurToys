@@ -1,0 +1,33 @@
+table.menuhorizontal { 
+  border: 5px solid tomato;
+  border-style: dashed;
+  background-color: rgb(143, 233, 236);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+div.menuhorizontal {
+  background-color: rgb(227, 149, 247);
+  overflow: auto; 
+  font-family: Permanent Marker;
+  border: tomato 5px solid; 
+  border-top-left-radius: 20px; 
+  border-bottom-right-radius: 20px;
+  outline: 2px dashed;
+  outline-color: blue;
+  outline-width: 5px;
+  min-height: .01%;
+  padding: 2%;
+  margin: 2%;s
+  text-align: center; 
+}
+
+div.menuhorizontal a {
+  display: block; 
+  color: rgb(233, 235, 144);
+  font-size: 100%;
+  padding: 25%
+  text-decoration: none;
+}
+
+div.menuhorizontal a:hover {
+  background-color: rgb(143, 233, 236); 
+}
