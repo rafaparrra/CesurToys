@@ -1,0 +1,17 @@
+table { 
+  border: 1px solid; 
+  border-radius: 5px; 
+  background-color: white; 
+  border-width: 3px;
+  border-color: black; 
+  width: 100%;
+  border-collapse: collapse; 
+  font-size: 15px; 
+}
+td { 
+  border: 1px solid; 
+  text-align: center; 
+}
+tr:nth-child(even) { 
+  background-color: grey; 
+}
