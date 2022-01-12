@@ -23,7 +23,7 @@ div.menuhorizontal {
 div.menuhorizontal a {
   display: block; 
   color: rgb(233, 235, 144);
-  font-size: 100%;
+  font-size: 18px;
   padding: 25%
   text-decoration: none;
 }
