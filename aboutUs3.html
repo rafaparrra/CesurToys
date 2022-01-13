@@ -1,34 +1,51 @@
 <!DOCTYPE html>
-<html lang="es-ES"
-  <!--Atributo lang para poner idioma y pais-->
+<html lang="es -ES">
+  <!-- lang para el idioma y -ES par ael pais -->
   <head>
     <meta charset="UTF-8"/>
     <!--Uso del código UTF8-->
     <meta name="author" content="Cesur Toys"/>
     <!--Nombre de nuestro trabajo-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
     <title>Cesur Toys</title>
-   <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-      <img class="centrado" id="logo" src="logo.PNG"/>
-      <div class="menuhorizontal">
-        <a href="index3.html">Página Principal</a>
-        <a href="services3.html">Qué Vendemos?</a>
-        <a href="free3.html">Página Libre</a>
-        <a href="contact3.html">Contacte Con Nosotros</a>
-      </div>
-    <div>
-    <h1 class=”.tamañonormal”> CESUR TOYS </h1> 
+  <script>
+    function abrirnav() {
+      document.getElementById("navegacion").style.width = "250px";
+      document.getElementById("menu").style.marginLeft = "250px";
+    }
+
+    function cerrarnav() {
+      document.getElementById("navegacion").style.width = "0";
+      document.getElementById("menu").style.marginLeft = "0";
+    }
+  </script>
+  <body background="fondojugue.jpg">
+    <div id="navegacion" class="desliza">
+      <a href="javascript:void(0)" onclick="cerrarnav()">&times;</a>
+      <a href="index3.html">Página Principal</a>
+      <a href="free3.html">Página libre</a>
+      <a href="services3.html">Qué vendemos?</a>
+      <a href="contact3.html">Contacte Con Nosotros</a>
     </div>
+
+    <nav class="navegarriba">
+      <a href="#" class="abrir" onclick="abrirnav()">
+        <svg width="30" height="30" id="icoOpen">
+          <path d="M0,5 30,5" stroke="tomato" stroke-width="5" />
+          <path d="M0,14 30,14" stroke="rgb(241, 220, 122)" stroke-width="5" />
+          <path d="M0,23 30,23" stroke="tomato" stroke-width="5" />
+        </svg>
+      </a>
+    </nav>
+    <img class="centrado" id="logo" src="logo.PNG"/>
+    <h1> CESUR TOYS </h1> 
     <!--Título de la página-->
-    <div>
-    <h4 class=”.tamañoh34”><i><u>Origen e Historia de la empresa.</i></u></h4>
-    </div>
+    <h4><i><u>Origen e Historia de la empresa.</i></u></h4>
     <!--Subtítulo 1-->
-    <div>
-    <p class=”.tamañomuygrande”>
+    <p>
       Cesur Toys nace en 2015 en España, en la ciudad de Málaga, cuando un grupo
       de amigos cumplen el sueño de abrir un pequeño establecimiento para la
       venta de juguetes ya conocidos para niños, además de algunos más modernos.
@@ -38,37 +55,26 @@
       de Málaga.
       <!--Párrafo en el que se comenta el origen e historia de la empresa-->
     </p>
-    </div>
     <img class="centrado" src="https://us.123rf.com/450wm/tea/tea1710/tea171000114/88822396-s%C3%A3o-petersburgo-r%C3%BAssia-circa-outubro-de-2017-dentro-de-uma-loja-de-brinquedos-hamleys-em-s%C3%A3o-petersb.jpg?ver=6" width="300" height="260">
     <!--Uso de img para insertar imágenes en html-->
-    <div>
-    <h4 class=”.tamañoh34”><i><u>Empleados</i></u>.</h4>
-    </div>
+    <h4><i><u>Empleados</i></u>.</h4>
     <!--Subtítulo 2-->
-    <div>
-    <p class=”.tamañomuygrande”>
+    <p>
       La empresa cuenta con 10 empleados para la gestión de los dos
       establecimientos de la capital.
       <!--Segundo párrafo para comentar el número de empleados que trabajan en la empresa-->
     </p>
-    </div>
-    <div>
-    <h4 class=”.tamañoh34”><i><u>Descripción.</i></u></h4>
-    </div>
+    <h4><i><u>Descripción.</i></u></h4>
     <!--Subtítulo 3-->
-    <div>
-    <p class=”.tamañomuygrande”>
+    <p>
       Tienda de juguetes preferida de los niños y niñas dónde encontrarás el
       regalo más divertido, ya sea, una muñeca, coche teledirigido, juegos de
       mesa, videojuegos y lo último en Legos.
       <!--Tercer párrafo dónde se hace una descripción sonre lo que puedes encontrar en la empresa-->
     </p>
-    </div>
     <img class="centrado" src="https://d500.epimg.net/cincodias/imagenes/2014/12/18/empresas/1418930455_027609_1418930767_noticia_normal.jpg" widht="300" height="260">
     <!--img para insertar otra imágen-->
-    <div>
-    <h4 class=”.tamañoh34”><i><u>Horario.</i></u></h4>
-     </div>
+    <h4><i><u>Horario.</i></u></h4>
     <!--Subtítulo 4-->
     <table>
       <!--Creación de una tabla-->
