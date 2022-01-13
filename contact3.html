@@ -1,34 +1,51 @@
 <!DOCTYPE html>
-<html lang="es-ES"
+<html lang="es -ES">
+  <!-- lang para el idioma y -ES par ael pais -->
   <head>
-    <meta charset="UTF-8"/>  
-    <!--Uso del código UTF8--> 
+    <meta charset="UTF-8"/>
+    <!--Uso del código UTF8-->
     <meta name="author" content="Cesur Toys"/>
     <!--Nombre de nuestro trabajo-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Contacto Cesur Toys</title> 
-    <img class="derecha" id="logo" src="logo.PNG" />
-   <link rel="stylesheet" href="style.css" />
-    <!--Título de la página-->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <title>Cesur Toys</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="menuhorizontal">
+  <script>
+    function abrirnav() {
+      document.getElementById("navegacion").style.width = "250px";
+      document.getElementById("menu").style.marginLeft = "250px";
+    }
+
+    function cerrarnav() {
+      document.getElementById("navegacion").style.width = "0";
+      document.getElementById("menu").style.marginLeft = "0";
+    }
+  </script>
+  <body background="fondojugue.jpg">
+    <div id="navegacion" class="desliza">
+      <a href="javascript:void(0)" onclick="cerrarnav()">&times;</a>
       <a href="index3.html">Página Principal</a>
-      <a href="aboutUs3.html">Quiénes Somos?</a>
+      <a href="aboutUs3.html">Quiénes somos?</a>
+      <a href="services3.html">Qué vendemos?</a>
       <a href="free3.html">Página Libre</a>
-      <a href="contact3.html">Contacte Con Nosotros</a>
     </div>
-    <div>
-    <h1 class=”.tamañonormal”>CONTACTO</h1>
-    </div>
+    <nav class="navegarriba">
+      <a href="#" class="abrir" onclick="abrirnav()">
+        <svg width="30" height="30" id="icoOpen">
+          <path d="M0,5 30,5" stroke="tomato" stroke-width="5" />
+          <path d="M0,14 30,14" stroke="rgb(241, 220, 122)" stroke-width="5" />
+          <path d="M0,23 30,23" stroke="tomato" stroke-width="5" />
+        </svg>
+      </a>
+    </nav>
+    <img class="centrado" id="logo" src="logo.PNG"/>
+    <h1>CONTACTO</h1>
      <!--Subtítulo 1-->
-    <h2 class=”.tamañocompleto”>
+    <h2>
       Si tienes cualquier duda sobre tu compra o consulta sobre nuestras
       tiendas, puedes contactar con nosotros como prefieras:
     </h2>
-    </div>
       <!--Creación de un form-->
   <div class="formulariocontacto">
     <form>
@@ -101,9 +118,8 @@
   <input type="reset" value="Restablecer">
  </form>
 </div>
-  <div>
-  <h3 class=”.tamañoh34>Dirección en Google Maps </h3>
-  </div>
+
+  <h3> Dirección en Google Maps </h3>
   <!--Enlace a mapa de google-->
   <div class="mapouter"><div class="gmap_canvas"><iframe class="centrado" width="450" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=cesur%20malaga%20este&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:300px;width:450px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:450px;}</style></div></div>
 </body>
